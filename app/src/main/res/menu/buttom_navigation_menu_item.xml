@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"/>
+    <item
+        android:id="@+id/bookings"
+        android:icon="@drawable/ic_bookings"
+        android:title="Bookings"/>
+    <item
+        android:id="@+id/listings"
+        android:icon="@drawable/ic_listings"
+        android:title="Listings"/>
+</menu>

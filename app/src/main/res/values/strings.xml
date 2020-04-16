@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MotorBazar</string>
+    <string name="all_vehicles">ALL</string>
+    <string name="bikes">Bikes</string>
+    <string name="cars">CARS</string>
+
+    <string name="wishlists">Wishlists</string>
+    <string name="sellinglists">Sellings</string>
+    <string name="soldlists">Sold</string>
+
+    <string name="category">Category</string>
+
+    <string name="title_activity_near_by_map">NearByMap</string>
+    <string-array name="vehicle_condition">
+        <item>-----SELECT CONDITION-----</item>
+        <item>New</item>
+        <item>Like New</item>
+        <item>Good</item>
+        <item>Fair</item>
+        <item>Poor</item>
+    </string-array>
+
+
+    <string name="googleMap_api">AIzaSyDhHeoUJT7H4Vb2WKoZkdsu8s6BhJ7M41E</string>
+</resources>

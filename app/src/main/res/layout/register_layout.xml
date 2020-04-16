@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ic_login_main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="-80dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/temprorary_logo"/>
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Firstname"
+            android:drawableLeft="@drawable/icon_name"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_name"
+            android:hint="Lastname"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/icon_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/username"
+            android:drawableLeft="@drawable/icon_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/password"
+            android:drawableLeft="@drawable/icon_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:drawableLeft="@drawable/icon_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_contact"
+            android:hint="Contact No."
+            android:inputType="number"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:background="@drawable/loginbtn_design"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.motorbazar">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDhHeoUJT7H4Vb2WKoZkdsu8s6BhJ7M41E"/>
+
+        <activity
+            android:name=".SplashScreenPackage.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterPackage.RegisterUser"
+            android:label="Sign Up"
+            android:parentActivityName=".SplashScreenPackage.SplashScreen"></activity>
+        <activity
+            android:name=".User_Dashboard.UserDashboard"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AddingItemsPackage.AddingVehicle"
+            android:label="Details"
+            android:parentActivityName=".User_Dashboard.UserDashboard"></activity>
+        <activity
+            android:name=".AddingItemsPackage.AddingPhoto"
+            android:label="Vehicle Images"
+            android:parentActivityName=".AddingItemsPackage.AddingVehicle"></activity>
+        <activity
+            android:name=".VehicleDetails"
+            android:label="Vehicle Information"
+            android:parentActivityName=".User_Dashboard.UserDashboard"></activity>
+
+        <activity
+            android:name=".VehiclesInMap"
+            android:label="Map representation"
+            android:parentActivityName=".User_Dashboard.UserDashboard"></activity>
+
+        <activity
+            android:name=".SingleVehicleMapInfo"
+            android:parentActivityName=".VehicleDetails"
+            android:label="map"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDhHeoUJT7H4Vb2WKoZkdsu8s6BhJ7M41E" />
+    </application>
+
+
+
+    <dist:module dist:instant="true" />
+
+</manifest>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F1F1">
+
+    <ImageView
+        android:id="@+id/cancel_bottomsheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_cancel"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image_user"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        android:layout_below="@id/cancel_bottomsheet"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow_color="#3f51b5"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_user"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Swaraj Agrawal"
+            android:layout_gravity="center"
+            android:textColor="#333"
+            />
+        <TextView
+            android:id="@+id/user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Biratnagar"
+            android:layout_gravity="center"
+            android:textColor="#333"
+            />
+        <TextView
+            android:id="@+id/user_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Nepal"
+            android:layout_gravity="center"
+            android:textColor="#333"
+            />
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="swaraj@gmail.com"
+            android:layout_gravity="center"
+            android:textColor="#333"/>
+        <TextView
+            android:id="@+id/user_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="9804081619"
+            android:layout_gravity="center"
+            android:textColor="#333"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/call_user_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Call Now"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_phone_icon"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/loginbtn_design"
+                />
+            <Button
+                android:id="@+id/sms_user_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="SMS Now"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_sms_icon"
+                android:background="@drawable/loginbtn_design"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
